@@ -6,6 +6,7 @@ import os
 load_dotenv()  # Load from .env
 
 uri = os.getenv("MONGODB_URI")
+print("MongoDB URI:", uri)  # Debugging line to check if the URI is loaded correctly
 
 if not uri:
     raise Exception("MONGODB_URI is not set in the .env file")
